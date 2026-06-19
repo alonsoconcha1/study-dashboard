@@ -1,6 +1,0 @@
-﻿# Ignorar archivos del proyecto de optimización
-main.py
-data/
-__pycache__/
-*.pyc
-.DS_Store
