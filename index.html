@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de estudio UC</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js?v=20260619-2" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <div class="brand">
+        <div class="brand-mark">UC</div>
+        <div>
+          <p class="eyebrow">Ingeniería Civil</p>
+          <h1>Dashboard de estudio</h1>
+        </div>
+      </div>
+
+      <div class="date-card">
+        <span id="todayLabel">Hoy</span>
+        <strong id="studyTodayLabel">0 h de estudio</strong>
+      </div>
+
+      <nav class="nav-list" aria-label="Secciones del dashboard">
+        <button class="nav-button active" type="button" data-tab="overview" aria-selected="true">Resumen</button>
+        <button class="nav-button" type="button" data-tab="schedule" aria-selected="false">Horario</button>
+        <button class="nav-button" type="button" data-tab="courses" aria-selected="false">Ramos y notas</button>
+        <button class="nav-button" type="button" data-tab="assessments" aria-selected="false">Evaluaciones</button>
+        <button class="nav-button" type="button" data-tab="milestones" aria-selected="false">Hitos</button>
+        <button class="nav-button" type="button" data-tab="planner" aria-selected="false">Plan diario</button>
+        <button class="nav-button" type="button" data-tab="settings" aria-selected="false">Ajustes del plan</button>
+      </nav>
+
+      <button class="theme-toggle" type="button" data-action="toggle-theme" id="themeToggle">🌙 Oscuro</button>
+      <div class="save-state" id="autosaveLabel">Guardado local</div>
+    </aside>
+
+    <main class="main-area">
+      <header class="main-header">
+        <p class="eyebrow">Organizador académico</p>
+        <h2 id="pageTitle">Resumen</h2>
+      </header>
+      <div id="alertArea" class="alert-area" aria-live="polite" aria-atomic="true"></div>
+      <div id="appContent" class="content-area" aria-live="polite"></div>
+      <noscript>
+        <div class="empty-state">Activa JavaScript para usar el dashboard de estudio y guardar tus datos localmente.</div>
+      </noscript>
+    </main>
+  </div>
+</body>
+</html>
